@@ -3,7 +3,7 @@
 source("Utilities.R")
 plot1 <- function(filename = "plot1.png"){
   mydata<-getCachedData()
-  png(filename,width = 480, height = 480,)
+  png(filename,width = 480, height = 480)
   hist(mydata$Global_active_power, main="Global Active Power",xlab="Global Active Power (kilowatts)", col='red')
   dev.off()
   
