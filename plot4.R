@@ -6,7 +6,7 @@
 source("Utilities.R")
 plot4 <- function(filename = "plot4.png"){
   mydata<-getCachedData()
-  png(filename)
+  png(filename,width = 480, height = 480)
   par(mfrow=c(2,2))
   
   

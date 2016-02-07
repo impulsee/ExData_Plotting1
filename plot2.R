@@ -2,7 +2,7 @@
 source("Utilities.R")
 plot2 <- function(filename = "plot2.png"){
   mydata<-getCachedData()
-  png(filename)
+  png(filename,width = 480, height = 480)
   with(mydata, {
     plot(dateTime, Global_active_power, type='l', xlab='', ylab='Global Active Power (kilowatts)')
   })

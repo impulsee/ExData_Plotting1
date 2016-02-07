@@ -2,7 +2,7 @@
 source("Utilities.R")
 plot3 <- function(filename = "plot3.png"){
   mydata<-getCachedData()
-  png(filename)
+  png(filename,width = 480, height = 480)
   
   with(mydata, plot(dateTime,Sub_metering_1, type = "l", ylab = "Energy sub metering",xlab=""))
   lines(mydata$dateTime,mydata$Sub_metering_2,type = "l", col = "red")
