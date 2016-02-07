@@ -19,7 +19,7 @@ downloadData<-function(url, destfile){
   }
 }
   
-## This function tries to extract data downloaded data if file doesn't exist
+## This function tries to extract data from downloaded data if file doesn't exist
 extractDownloadedData<-function(srcfile, dstfile){
   if (!file.exists(dstfile)){
     if (file.exists(srcfile)){
